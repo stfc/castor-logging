@@ -1,0 +1,5 @@
+{
+    "server" : "elasticsearch.example.com",
+    "port" : "9200",
+    "index" : "logstash-%(year)d.%(month)02d.%(day)02d"
+}
