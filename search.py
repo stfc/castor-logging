@@ -46,13 +46,7 @@ url += '%(field)s:%%22%(value)s%%22' % vars(args)
 
 results = load(urlopen(url))
 
-fields = [
-    u'@timestamp',
-    u'syslog_program',
-    u'castor_LVL',
-    u'castor_MSG',
-    u'castor_DiskServer',
-]
+fields = config['fields']
 
 table = PrettyTable(field_names=fields)
 

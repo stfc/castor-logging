@@ -1,5 +1,12 @@
 {
     "server" : "elasticsearch.example.com",
     "port" : "9200",
-    "index" : "logstash-%(year)d.%(month)02d.%(day)02d"
+    "index" : "logstash-%(year)d.%(month)02d.%(day)02d",
+    "fields" : [
+        "@timestamp",
+        "syslog_program",
+        "castor_LVL",
+        "castor_MSG",
+        "castor_DiskServer"
+    ]
 }
